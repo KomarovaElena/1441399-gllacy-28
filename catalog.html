@@ -27,46 +27,47 @@
     <main>
       <h1>Сливочное мороженое</h1>
       <form action="#" method="post">
-       Сортировка:<br>
-       <div class="select">
+       <fieldset class="select">
         <label for="select">Сортировка</label>
         <select size="4">
          <option>по популярности</option>
          <option>сначала недорогие</option>
          <option>по популярности</option>
          <option>сначала недорогие</option>
-        <select>
-       </div>
-        Цена: 100Р.-500Р.<br>
-        <input type="range" min="100" max="500">
-        Жирность:<br>
-       <div class="radio">
-        <label>
-         <input type="radio" name="0%" value="0%">0%
-        </label>
-        <label>
-         <input type="radio" name="до 10%" value="до 10%" checked>до 10%
-        </label>
-        <label>
-         <input type="radio" name="до 30%" value="до 30%">до 30%
-        </label>
-        <label>
-         <input type="radio" name="выше 30%" value="выше 30%">выше 30%
-        </label>
-       </div>
-       Наполнители:<br>
-       <div class="checkbox">
-        <input type="checkbox" name="шоколадные" id="шоколадные" checked>
-        <label for="шоколадные">Шоколадные</label>
-        <input type="checkbox" name="сахарные присыпки" id="сахарные присыпки" checked>
-        <label for="сахарные присыпки">Сахарные присыпки</label>
-        <input type="checkbox" name="фрукты" id="фрукты">
-        <label for="фрукты">Фрукты</label>
-        <input type="checkbox" name="сиропы" id="сиропы">
-        <label for="сиропы">Сиропы</label>
-        <input type="checkbox" name="джемы" id="джемы">
-        <label for="джемы">Джемы</label>
-       </div>
+       </fieldset>
+       <fieldset class="price">
+        <label for="price">Цена: 100Р.-500Р.</label>
+        <input type="range" min="100" max="500" id="price">
+       </fieldset>
+       <fieldset class="">
+        <span>Жирность:</span>
+        <div class="radio">
+         <label>
+          <input type="radio" name="0%" value="0%">0%
+         </label>
+         <label>
+          <input type="radio" name="до 10%" value="до 10%" checked>до 10%
+         </label>
+         <label>
+          <input type="radio" name="до 30%" value="до 30%">до 30%
+         </label>
+         <label>
+          <input type="radio" name="выше 30%" value="выше 30%">выше 30%
+         </label>
+       </fieldset>
+       <fieldset class="">
+        <span>Наполнители:</span>
+         <input type="checkbox" name="шоколадные" id="шоколадные" checked>
+         <label for="шоколадные">Шоколадные</label>
+         <input type="checkbox" name="сахарные присыпки" id="сахарные присыпки" checked>
+         <label for="сахарные присыпки">Сахарные присыпки</label>
+         <input type="checkbox" name="фрукты" id="фрукты">
+         <label for="фрукты">Фрукты</label>
+         <input type="checkbox" name="сиропы" id="сиропы">
+         <label for="сиропы">Сиропы</label>
+         <input type="checkbox" name="джемы" id="джемы">
+         <label for="джемы">Джемы</label>
+       </fieldset>
        <input type="submit" name="Применить" value="Применить">
       </form>
       <ul>
