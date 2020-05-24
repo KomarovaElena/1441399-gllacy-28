@@ -5,14 +5,14 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <header class="main-header">
+    <header>
       <nav>
         <a class="logo-glaccy"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина"></a>
         <ul>
           <li>
             <a href="">Каталог</a>
             <ul>
-              <li><a href="">Новинки</a></li>
+              <li><a href="">Новинки</a></li> <!--здесь жирное написание текста - можно обернуть в <b></b>?-->
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="">Щербеты</a></li>
               <li><a href="">Фруктовый лед</a></li>
@@ -25,9 +25,21 @@
       </nav>
       <section>
         <h2 class="visually-hidden">Заказ</h2>
-        <a href=""><img src="img/search.svg" width="16" height="16" alt="Поиск">Поиск</a>
-        <a href=""><img src="img/entry.svg" width="20" height="19" alt="Вход">Вход</a>
-        <a href=""><img src="img/basket-null.svg" width="21" height="20" alt="Корзина">Корзина</a>
+        <a href="#search"><img src="img/search.svg" width="16" height="16" alt="Поиск">Поиск</a>
+        <div id="search">
+          <input type="search" name="search" placeholder="Крем-брюле" required>
+        </div>
+        <a href="#entry"><img src="img/entry.svg" width="20" height="19" alt="Вход">Вход</a>
+        <form action="echo.htmlacademy.ru" method="post">
+          <div id="entry">
+            <input type="email" name="email" placeholder="Электронная почта"  required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit" value="Войти">Войти</button>
+            <a href="#">Забыли пароль</a>
+            <a href="#">Новая регистрация</a>
+          </div>
+        </form>
+        <a href=""><img src="img/basket-null.svg" width="21" height="20" alt="Корзина">Пусто</a>
       </section>
       <section>
         <h2 class="visually-hidden">Расписание</h2>
@@ -42,7 +54,16 @@
           <li>
             <img src="img/slider-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
             <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-            <a href="">Давайте оба</a>
+            <a href="#feedback">Давайте оба</a>
+            <form action="echo.htmlacademy.ru" method="post">
+              <fieldset><!--не совсем поняла когда всплывает это окно, после "давайте оба?"-->
+                <label>Мы обязательно вам ответим!</label>
+                <input type="text" name="name" placeholder="Как вас зовут?"  required>
+                <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+                <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
+                <button type="submit" value="Отправить">Отправить</button>
+              </fieldset>
+            </form>
           </li>
           <li>
             <img src="img/slider-2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
