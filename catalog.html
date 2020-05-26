@@ -25,8 +25,20 @@
       </nav>
       <section>
         <h2 class="visually-hidden">Заказ</h2>
-        <a href=""><img src="img/search.svg" width="16" height="16" alt="Поиск">Поиск</a>
-        <a href=""><img src="img/entry.svg" width="20" height="19" alt="Вход">Вход</a>
+        <a href="#search"><img src="img/search.svg" width="16" height="16" alt="Поиск">Поиск</a>
+        <div id="search">
+          <input type="search" name="search" placeholder="Крем-брюле" required>
+        </div>
+        <a href="#entry"><img src="img/entry.svg" width="20" height="19" alt="Вход">Вход</a>
+        <form action="echo.htmlacademy.ru" method="post">
+          <div id="entry">
+            <input type="email" name="email" placeholder="Электронная почта"  required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit" value="Войти">Войти</button>
+            <a href="#">Забыли пароль</a>
+            <a href="#">Новая регистрация</a>
+          </div>
+        </form>
         <div class="shopping-cart">
           <a href=""><img src="img/basket-null.svg" width="21" height="20" alt="Корзина">Корзина</a>
         </div>
