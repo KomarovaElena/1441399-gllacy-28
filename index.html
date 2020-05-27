@@ -201,15 +201,12 @@
       <form action="echo.htmlacademy.ru" method="post">
         <fieldset>
           <h3>Мы обязательно вам ответим!</h3>
-          <label class=visually-hidden>Имя
-            <input type="text" name="name" placeholder="Как вас зовут?"  required>
-          </label>
-          <label class=visually-hidden>Почта
-            <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
-          </label>
-          <label class=visually-hidden>Комментарии
-            <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
-          </label>
+          <label for id="name-family" class=visually-hidden>Имя</label>
+          <input type="text" name="name" id="name-family" placeholder="Как вас зовут?"  required>
+          <label for id="e-mail" class=visually-hidden>Почта</label>
+          <input type="email" name="email" id="e-mail" placeholder="Ваша почта для ответа?" required>
+          <label for id="comment-field" class=visually-hidden>Комментарии</label>
+          <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
           <button type="submit" value="Отправить">Отправить</button>
         </fieldset>
       </form>
