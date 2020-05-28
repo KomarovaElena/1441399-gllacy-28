@@ -2,23 +2,142 @@
   --basic-brown: #9D8B84
   --basic-grey: #8996A6;
   --basic-green: #849D8F;
-  --basic-grey: #F8F7F4;
+  --basic-grey-light: #F8F7F4;
   --basic-red: #D07058;
   --basic-white: #ffffff;
-  --basic-black: #000000;}
+  --basic-grey-dark: #323232;
+  --basic-grey-middle: 5A5A5A
+  --basic-pink-light: #FBDED7;
+}
 
 body {
   min-width: 1220px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
   color: var(--basic-white);
   text-transform: uppercase;
-  background-color: var(--basic-black);
-  background-image: url("../img/bg.jpg");
+  background-color: var(--basic-green);
+  background-image: url("../img/...jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  display: inline;
+  padding: 32px;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-green);
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-pink-light);
+}
+
+
+.features{
+  background-image: url("img/pattern.png");
+  color: var(--basic-gtey-dark);
+}
+
+.feature-item {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.features-list{
+  list-style: none
+}
+
+.news-block{
+   background-image: url("img/background-for-new.jpg");
+   color: var(--basic-grey-dark);
+}
+
+.news-block a{
+   font-size: 24px;
+   line-height: 30px;
+   text-decoration: underline;
+}
+
+.subscription{
+   background-image: url("img/post-background.png");
+  /*здесь должен лежать прямоугольник*/
+   color: var(color: var(--basic-grey-middle);
+}
+
+.button-subscription :hover{
+position: absolute;
+width: 130px;
+height: 44px;
+left: 1017px;
+top: 1761px;
+background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+border-radius: 70px;
+
+.button:focus {
+background:#ddd;
+
+border-color:#ddd #333 #333 #ddd;
+
+border-style:solid;
+
+border-width:1px;
+
+}
+
+.button:active {
+
+background:#228B22;
+
+border-color:#ddd #333 #333 #ddd;
+
+border-style:solid;
+
+border-width:1px;
+}
+
+
+
+
+
