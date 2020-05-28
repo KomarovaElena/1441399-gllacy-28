@@ -1,1 +1,24 @@
-nn
+:root {
+  --basic-brown: #9D8B84
+  --basic-grey: #8996A6;
+  --basic-green: #849D8F;
+  --basic-grey: #F8F7F4;
+  --basic-red: #D07058;
+  --basic-white: #ffffff;
+  --basic-black: #000000;}
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
