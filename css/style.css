@@ -38,6 +38,7 @@ img {
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: var(--basic-white);
   display: inline;
   padding: 32px;
@@ -48,6 +49,7 @@ img {
 .main-navigation-wrapper {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 500;
   color: var(--basic-white);
   background-color: transparent;
 }
@@ -72,15 +74,16 @@ img {
   background-color: var(--basic-pink-light);
 }
 
-
-.features{
-  background-image: url("img/pattern.png");
-  color: var(--basic-gtey-dark);
+.phone a{
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 500;
 }
 
 .feature-item {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -93,49 +96,56 @@ img {
    color: var(--basic-grey-dark);
 }
 
+.news-block h2{
+   font-weight: 500;
+}
+
 .news-block a{
    font-size: 24px;
    line-height: 30px;
    text-decoration: underline;
+   font-weight: 700;
 }
 
 .subscription{
    background-image: url("img/post-background.png");
   /*здесь должен лежать прямоугольник*/
-   color: var(color: var(--basic-grey-middle);
+   color: var(color: var(--basic-grey-middle);   
 }
 
 .button-subscription :hover{
-position: absolute;
-width: 130px;
-height: 44px;
-left: 1017px;
-top: 1761px;
-background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-border-radius: 70px;
+  position: absolute;
+  width: 130px;
+  height: 44px;
+  left: 1017px;
+  top: 1761px;
+  background-color: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  border-radius: 70px;
 
-.button-subscription:focus {;
+.button-subscription:focus {
+  background-color:#;
 }
 
 .button-subscription:active {
-background:#;
+  background-color:#;
 }
 
 .main-footer{
-  color: var(--basic-white);
-  text-decoration: underline;
   background-color: transparent;
 }
  
 .info{
   font-size: 13px;
   line-height: 18px;
+  text-decoration: underline;
+  font-weight: 400;
 }  
 
 .copyright{
   font-size: 12px;
   line-height: 18px;
+  font-weight: 400;
 }
   
 
