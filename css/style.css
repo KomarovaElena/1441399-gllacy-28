@@ -139,7 +139,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-decoration: underline;
-  font-weight: 400;
+  font-weight:400;
 }  
 
 .copyright{
@@ -148,6 +148,30 @@ img {
   font-weight: 400;
 }
   
+.main-catalog h1{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+  
+.main-menu{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+  
+ .milk-ice-cream h3{
+}
+
+.milk-ice-cream p{
+}
+
+.milk-ice-cream p span{
+  }
+
+.milk-ice-cream a{
+  }
 
 
 
