@@ -92,25 +92,25 @@ img {
 }
 
 .news-block{
-   background-image: url("img/background-for-new.jpg");
-   color: var(--basic-grey-dark);
+  background-image: url("img/background-for-new.jpg");
+  color: var(--basic-grey-dark);
 }
 
 .news-block h2{
-   font-weight: 500;
+  font-weight: 500;
 }
 
 .news-block a{
-   font-size: 24px;
-   line-height: 30px;
-   text-decoration: underline;
-   font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .subscription{
-   background-image: url("img/post-background.png");
+  background-image: url("img/post-background.png");
   /*здесь должен лежать прямоугольник*/
-   color: var(color: var(--basic-grey-middle);   
+  color: var(color: var(--basic-grey-middle);
 }
 
 .button-subscription :hover{
@@ -134,46 +134,57 @@ img {
 .main-footer{
   background-color: transparent;
 }
- 
+
 .info{
   font-size: 13px;
   line-height: 18px;
   text-decoration: underline;
   font-weight:400;
-}  
+}
 
 .copyright{
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
 }
-  
+
 .main-catalog h1{
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
-  
+
 .main-menu{
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   text-decoration: underline;
 }
-  
+
  .milk-ice-cream h3{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .milk-ice-cream p{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
 }
 
 .milk-ice-cream p span{
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
   }
 
 .milk-ice-cream a{
+  position: absolute;
+  width: 200px;
+  height: 44px;
+  background-color: linear-gradient(180deg, #F26843 0%, #E84D37 100%);
+  box-shadow: 0px 1px 2px #AC1000;
+  border-radius: 50px;
   }
-
-
-
-
-
