@@ -103,19 +103,22 @@ img{
   line-height: 30px;
   font-weight: 500;
   text-align: center;
+  color: var(--basic-grey-dark);
 }
 
-.features-list{
-  list-style: none
+.features-list {
+  list-style: none;
+  color: var(--basic-grey-dark);
 }
 
 .news-block{
-  background-image: url("img/background-for-new.jpg");
+  background-image: url("img/background-for-new.jpg") no-repeat;
   color: var(--basic-grey-dark);
 }
 
 .news-block h2{
   font-weight: 500;
+  color: var(--basic-grey-dark);
 }
 
 .news-block a{
@@ -123,10 +126,14 @@ img{
   line-height: 30px;
   text-decoration: underline;
   font-weight: 700;
+  color: var(--basic-grey-dark);
 }
 
 .subscription {
-  background-image: url("img/post-background.png");
+  background-image: url("img/post-background.png") no-repeat;
+}
+
+.subscription p{
   color: var(--basic-grey-middle);
 }
 
@@ -147,6 +154,31 @@ img{
 
 .button-subscription:active {
   background-color:#;
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--basic-grey-dark);
+}
+
+.adress span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.call {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--basic-grey-dark);
+}
+
+.call a{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-grey-dark);
 }
 
 .main-footer{
