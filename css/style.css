@@ -20,7 +20,6 @@ body{
   font-weight: 400;
   color: var(--basic-white);
   background-color: var(--basic-green);
-  background-image: url("../img/...jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -116,7 +115,7 @@ img{
 }
 
 .news-block{
-  background-image: url("img/background-for-new.jpg") no-repeat;
+  background-image: url("../img/background-for-new.jpg") no-repeat;
   color: var(--basic-grey-dark);
 }
 
@@ -134,7 +133,7 @@ img{
 }
 
 .subscription {
-  background-image: url("img/post-background.png") no-repeat;
+  background-image: url("../img/post-background.png") no-repeat;
   color: var(--basic-grey-middle);
 }
 
