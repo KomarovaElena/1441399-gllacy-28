@@ -30,6 +30,10 @@ a{
   color: var(--basic-white);
 }
 
+.visually-hidden{
+  display: none;
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -138,7 +142,7 @@ img{
   color: var(--basic-grey-middle);
 }
 
-.button-subscription :hover{
+/*.button-subscription :hover{
   position: absolute;
   width: 130px;
   height: 44px;
@@ -155,7 +159,7 @@ img{
 
 .button-subscription:active {
   background-color:#;
-}
+}*/
 
 .adress {
   font-size: 14px;
@@ -232,6 +236,10 @@ img{
   line-height: 16px;
   font-weight: 500;
   text-decoration: underline;
+}
+
+.ice-cream{
+  list-style: none
 }
 
 .milk-ice-cream p{
