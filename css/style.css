@@ -19,7 +19,6 @@ body{
   line-height: 22px;
   font-weight: 400;
   color: var(--basic-white);
-  text-transform: uppercase;
   background-color: var(--basic-green);
   background-image: url("../img/...jpg");
   background-position: top center;
@@ -28,6 +27,7 @@ body{
 
 a{
   text-decoration: none;
+  color: var(--basic-white);
 }
 
 img{
@@ -42,7 +42,6 @@ img{
   color: var(--basic-white);
   display: inline;
   padding: 32px;
-  text-decoration: underline;
   background-color: transparent;
 }
 
@@ -56,8 +55,27 @@ img{
 
 .site-navigation{
   list-style: none;
+  text-decoration: underline;
 }
 
+.site-navigation a{
+  color: var(--basic-white);
+}
+
+.assortiment{
+  list-style: none;
+  text-decoration: none;
+}
+
+.slider{
+  list-style: none;
+}
+
+.slider h2{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-green);
 }
@@ -163,6 +181,11 @@ img{
   line-height: 16px;
   font-weight: 400;
   text-decoration: underline;
+}
+
+social{
+  list-style: none;
+  display: inline;
 }
 
  .milk-ice-cream h3{
