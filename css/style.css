@@ -6,7 +6,7 @@
   --basic-red: #D07058;
   --basic-white: #ffffff;
   --basic-grey-dark: #323232;
-  --basic-grey-middle: 5A5A5A
+  --basic-grey-middle: #5A5A5A;
   --basic-pink-light: #FBDED7;
 }
 
@@ -131,6 +131,7 @@ img{
 
 .subscription {
   background-image: url("img/post-background.png") no-repeat;
+  color: var(--basic-grey-middle);
 }
 
 .subscription p{
@@ -179,6 +180,13 @@ img{
   line-height: 24px;
   font-weight: 700;
   color: var(--basic-grey-dark);
+}
+
+.feedback h3{
+  color: var(--basic-grey-dark);
+  font-size: 24px;
+  line-height: 28px;
+  font-weight:500;
 }
 
 .main-footer{
