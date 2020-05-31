@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,8 +13,8 @@
         <a class="logo-glaccy"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина"></a>
         <ul class="site-navigation">
           <li>
-            <a href="">Каталог</a>
-            <ul class="assortiment">
+            <a href="#" class="site-navigation-current">Каталог</a>
+            <ul class="navigation-list">
               <li><a href="">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="">Щербеты</a></li>
@@ -22,12 +22,12 @@
               <li><a href="">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="">Доставка и оплата</a></li>
-          <li><a href="">О компании</a></li>
+          <li><a href="" class="site-navigation-current">Доставка и оплата</a></li>
+          <li><a href="" class="site-navigation-current">О компании</a></li>
         </ul>
       </nav>
       <section class="site-navigation-wrapper">
-        <h2 class="visually-hidden">Заказ</h2>
+        <h2 class="visually-hidden">Форма поиска</h2>
         <a href="#search"><img src="img/search.svg" width="16" height="16" alt="Поиск">Поиск</a>
         <div id="search">
           <input type="search" name="search" placeholder="Крем-брюле" required>
@@ -46,11 +46,11 @@
           <a href=""><img src="img/basket-null.svg" width="21" height="20" alt="Корзина">Корзина</a>
         </div>
       </section>
-      <section class="phone">
+      <div class="header-info">
         <h2 class="visually-hidden">Расписание</h2>
         <p>c 10 до 20, ежедневно</p>
         <a href=tel:88124502525>8 812 450-25-25</a>
-      </section>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">Магазин мороженого Glaccy</h1>
@@ -142,7 +142,7 @@
       </section>
       <section class="features">
         <h2  class="visually-hidden">Преимущества</h2>
-        <p class="feature-item">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
+        <p class="features-text">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
         <ul class="features-list">
           <li>
             <img src="img/ice-cream-small.svg" width="16" height="32" alt="Современное обрудование">
@@ -186,26 +186,26 @@
         <h2  class="visually-hidden">Карта</h2>
         <img src="img/map.png" width="1200" height="430" alt="Карта">
       </section>
-      <section >
+      <div class="contacts-block">
         <h2  class="visually-hidden">Адрес</h2>
-        <p class="adress">
-          Адрес главного офиса<br>
+        <div>
+          <p class="contacts-block-text">Адрес главного офиса<br>
           и офлайн-магазина:<br>
-          <span>ул. Большая Конюшенная,<br>
-          19/8, Санкт-Петербург</span>
-        </p>
-        <p class="call">
-          Для заказов по телефону:<br>
-          <a href="8812452525">8 812 450-25-25</a><br>
-          (с 10 до 20 ежедневно)
-        </p>
-        <button type="submit" class="button">Форма обратной связи</button>
-      </section>
+          <p class="contacts-block-info">ул. Большая Конюшенная,<br>
+          19/8, Санкт-Петербург</p>
+        </div>
+        <div>
+          <p class="contacts-block-text">Для заказов по телефону:</p>
+          <a class="contacts-block-info" href="8812452525">8 812 450-25-25</a><br>
+          <p class="contacts-block-text">(с 10 до 20 ежедневно)</p>
+        </div>
+        <a href="#" class="button contacts-block-button">Форма обратной связи</a>
+      </div>
       <form action="echo.htmlacademy.ru" method="post">
         <fieldset  class="feedback">
           <h3>Мы обязательно вам ответим!</h3>
-          <label for id="name" class=visually-hidden>Имя</label>
-          <input type="text" name="name" id="name" placeholder="Как вас зовут?"  required>
+          <label for id="name-you" class=visually-hidden>Имя</label>
+          <input type="text" name="name" id="name-you" placeholder="Как вас зовут?"  required>
           <label for id="e-mail" class=visually-hidden>Почта</label>
           <input type="email" name="email" id="e-mail" placeholder="Ваша почта для ответа?" required>
           <label for id="comment-field" class=visually-hidden>Комментарии</label>
@@ -226,9 +226,8 @@
       </section>
       <section class="info">
         <h4 class="visually-hidden">О нас</h4>
-        <img src="img/heart.svg" width="15" height="13" alt="Сердце">
         <ul class="info-list">
-          <li><a href="">Для поставщиков</a></li>
+          <li><a href=""><img src="img/heart.svg" width="15" height="13" alt="Сердце">Для поставщиков</a></li>
           <li><a href="">О производстве</a></li>
           <li><a href="">Наши документы</a></li>
           <li><a href="">Экологические стандарты</a></li>

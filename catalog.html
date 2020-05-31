@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -14,7 +14,7 @@
         <ul class="site-navigation">
           <li>
             <a href="">Каталог</a>
-            <ul class="assortiment">
+            <ul class="navigation-list">
               <li><a href="">Новинки</a></li>
               <li>Сливочное</li>
               <li><a href="">Щербеты</a></li>
@@ -27,7 +27,7 @@
         </ul>
       </nav>
       <section class="site-navigation-wrapper">
-        <h2 class="visually-hidden">Заказ</h2>
+        <h2 class="visually-hidden">Форма поиска</h2>
         <a href="#search"><img src="img/search.svg" width="16" height="16" alt="Поиск">Поиск</a>
         <div id="search">
           <input type="search" name="search" placeholder="Крем-брюле" required>
@@ -68,11 +68,11 @@
           <a href="">Оформить заказ</a>
         </div>
       </section>
-      <section class="phone">
+      <div class="header-info">
         <h2 class="visually-hidden">Расписание</h2>
         <p>c 10 до 20, ежедневно</p>
         <a href=tel:88124502525>8 812 450-25-25</a>
-      </section>
+      </div>
     </header>
     <main class="main-catalog">
       <ul class="main-menu">
@@ -136,97 +136,97 @@
         <h2 class="visually-hidden">Сливочное мороженое</h2>
         <ul class="ice-cream">
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p>310 Р<span>/кг</span></p>
+              <p class="price">310 Р<span>/кг</span></p>
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <p>380 Р<span>/кг</span></p>
+              <p class="price">380 Р<span>/кг</span></p>
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p>355 Р<span>/кг</span></p>
+              <p class="price">355 Р<span>/кг</span></p>
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <p>415 Р<span>/кг</span></p>
+              <p class="price">415 Р<span>/кг</span></p>
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-              <p>325 Р<span>/кг</span></p>
+              <p class="price">325 Р<span>/кг</span></p>
               <h3>Сливочное с брусничным джемом</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-              <p>410 Р<span>/кг</span></p>
+              <p class="price">410 Р<span>/кг</span></p>
               <h3>Сливочно-черничное с цельными ягодами черники</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-              <p>315 Р<span>/кг</span></p>
+              <p class="price">315 Р<span>/кг</span></p>
               <h3>Сливочно-лимонное с карамельной присыпкой</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-              <p>320 Р<span>/кг</span></p>
+              <p class="price">320 Р<span>/кг</span></p>
               <h3>Сливочное с шоколадной стружкой</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-              <p>440 Р<span>/кг</span></p>
+              <p class="price">440 Р<span>/кг</span></p>
               <h3>Сливочно-ванильное с кусочками шоколада</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-              <p>435 Р<span>/кг</span></p>
+              <p class="price">435 Р<span>/кг</span></p>
               <h3>Сливочное с ментоловым сиропом</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-              <p>355 Р<span>/кг</span></p>
+              <p class="price">355 Р<span>/кг</span></p>
               <h3>Сливочное с кусочками черного шоколада</h3>
               <a href="">Быстрый просмотр</a>
             </article>
           </li>
           <li>
-            <article class="milk-ice-cream">
+            <article class="product-list">
               <img src="img/ice-cream-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-              <p>420 Р<span>/кг</span></p>
+              <p class="price">420 Р<span>/кг</span></p>
               <h3>Сливочное с мятным сиропом</h3>
               <a href="">Быстрый просмотр</a>
             </article>
@@ -246,9 +246,8 @@
       </section>
       <section class="info">
         <h4 class="visually-hidden">О нас</h4>
-        <img src="img/heart.svg" width="15" height="13" alt="Сердце">
         <ul class="info-list">
-          <li><a href="">Для поставщиков</a></li>
+          <li><a href=""><img src="img/heart.svg" width="15" height="13" alt="Сердце">Для поставщиков</a></li>
           <li><a href="">О производстве</a></li>
           <li><a href="">Наши документы</a></li>
           <li><a href="">Экологические стандарты</a></li>
