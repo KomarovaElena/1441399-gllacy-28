@@ -200,24 +200,21 @@ img{
 
 .contacts-block{
   box-sizing: border-box;
-  padding: 32px 25px;
   width: 303px;
-  font-family: sans-serif;
+  height: 306px;
   background-color: var(--basic-white);
   border-radius: 16px;
   color: var(--basic-grey-dark);
 }
-.contacts-block-item{
-  margin-bottom: 30px;
-}
+
 .contacts-block-text{
-  margin: 0;
   max-width: 180px;
   font-size: 14px;
   line-height: 20px;
 }
 .contacts-block-info{
   display: block;
+  width: 180px;
   margin: 0;
   text-decoration: none;
   font-weight: 700;
