@@ -359,7 +359,7 @@ img{
   padding: 27px;
 }
 
-.product-list p{
+.product-card p{
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
@@ -371,7 +371,7 @@ img{
   font-weight: 700;
   }
 
-.product-list a{
+.product-card a{
   /*position: absolute;*/
   width: 200px;
   height: 44px;
