@@ -109,7 +109,7 @@ img{
 }
 
 .navigation-list{
-  display: none;
+  
   list-style: none;
 }
 
@@ -133,7 +133,7 @@ img{
 
 .features{
   width: 1146px;
-  height: 306px;
+  height: auto;
   border-radius: 16px;
   background: url("../img/pattern.png") repeat;
   margin: 27px;
@@ -169,7 +169,7 @@ img{
 
 .news-block{
   width: 560px;
-  height: 220px;
+  height: auto;
   border-radius: 16px;
   background: url("../img/background-for-new.jpg") no-repeat;
   color: var(--basic-grey-dark);
@@ -189,10 +189,17 @@ img{
   color: var(--basic-grey-dark);
 }
 
+.subscribe-block-inner{
+  padding: 30px 20px 36px;
+  background-color: #F8F7F4;
+  border-radius: 16px;
+}
+}
+
 .subscription{
   background: url("../img/post-background.png") no-repeat;
   width: 560px;
-  height: 220px;
+  height: auto;
   border-radius: 16px;
   color: var(--basic-grey-middle);
   margin: 27px 40px;
