@@ -66,7 +66,54 @@ img{
   color: var(--basic-white);
 }
 
+.navigation-item{
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 16px;
+  color: var(--basic-white);
+}
+
+.navigation-item span{
+  border-bottom: 1px solid var(--basic-white);
+}
+
+.navigation-item:hover{
+  color: #000;
+  background-color: #fff;
+}
+.navigation-item:active{
+  color: #000;
+  background-color: #EDEDED;
+  box-shadow: inset 0px 2px 1px #696969;
+}
+
+.navigation-item.active {
+  display: inline-block;
+
+  color: #fff;
+  background-color: #D07058;
+}
+
+.navigation-item.active span {
+  border-color: transparent;
+}
+
+.site-navigation .navigation-item-current{
+  width: 89px;
+  height: 31px;
+  border-radius: 26px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
 .user-menu{
+  list-style: none;
   display: flex;
   justify-content: space-between;
   width: 244px;
@@ -108,21 +155,22 @@ img{
   list-style: none;
 }
 
-.navigation-list{
-  
+.navigation-item .navigation-list{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
   list-style: none;
+}
+
+.navigation-list span{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--basic-grey-middle);
 }
 
 .forma{
   display: none;
-}
-
-.site-navigation-current{
-  border-bottom: 1px solid var(--basic-white);
-}
-
-.site-navigation-current:hover{
-  background-color: var(--basic-red);
 }
 
 .header-info a{
@@ -190,10 +238,9 @@ img{
 }
 
 .subscribe-block-inner{
-  padding: 30px 20px 36px;
-  background-color: #F8F7F4;
+  margin: 6px;
+  background-color: var(--basic-grey-light);
   border-radius: 16px;
-}
 }
 
 .subscription{
@@ -290,6 +337,7 @@ img{
 .main-menu a{
   border-bottom: 1px solid var(--basic-white);
 }
+
 .action{
   display:flex;
   width: 1200px;
@@ -344,13 +392,12 @@ img{
   display:flex;
 }
 
-.catalog-products h3{
-  width: 267px;
-  height: 33px;
-  font-size: 14px;
-  line-height: 16px;
+.product-card h3{
+  /*width: 267px;
+  height: 33px;*/
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
-  text-align: center;
   border-bottom: 1px solid var(--basic-white);
 }
 
