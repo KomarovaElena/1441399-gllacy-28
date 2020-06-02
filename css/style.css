@@ -66,7 +66,7 @@ img{
   color: var(--basic-white);
 }
 
-.site-navigation-wrapper{
+.user-menu{
   display: flex;
   justify-content: space-between;
   width: 244px;
@@ -262,7 +262,6 @@ img{
 .copyright{
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
 }
 
 .main-catalog h1{
@@ -279,7 +278,6 @@ img{
   height: 14px;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
 }
 
 .main-menu a{
