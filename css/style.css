@@ -58,7 +58,7 @@ img{
 .site-navigation{
   display: flex;
   justify-content: space-between;
-  width: 357px;
+  width: 500px;
   height: 12px;
   font-size: 16px;
   line-height: 18px;
@@ -69,14 +69,14 @@ img{
 .navigation-item{
   display: inline-block;
   vertical-align: top;
-  padding: 6px 14px;
-  font-family: sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  width: auto;
+  height: 31px;
   border-radius: 16px;
-  color: var(--basic-white);
+  text-align: center;
 }
 
 .navigation-item span{
@@ -84,10 +84,10 @@ img{
 }
 
 .navigation-item:hover{
-  color: #000;
-  background-color: #fff;
+  color: var(--basic-grey-dark);
+  background-color: var(--basic-white);
 }
-.navigation-item:active{
+/*.navigation-item:active{
   color: #000;
   background-color: #EDEDED;
   box-shadow: inset 0px 2px 1px #696969;
@@ -95,14 +95,27 @@ img{
 
 .navigation-item.active {
   display: inline-block;
-
   color: #fff;
   background-color: #D07058;
-}
+}*/
 
 .navigation-item.active span {
   border-color: transparent;
 }
+
+.navigation-item .navigation-list{
+  display: inline-block;
+  vertical-align: top;
+  width: 143px;
+  height: 147px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.item:hover{
+  background-color: var(--basic-pink-light);
+}
+
 
 .site-navigation .navigation-item-current{
   width: 89px;
