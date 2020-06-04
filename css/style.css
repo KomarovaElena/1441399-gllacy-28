@@ -12,7 +12,6 @@
 
 body{
   min-width: 1200px;
-  margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -41,7 +40,7 @@ img{
 }
 
 .page-body{
-  min-height: 100%
+  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -50,14 +49,22 @@ img{
 
 .main-header{
   display: flex;
-  margin-bottom:9px;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+  margin-left:auto;
+  margin-right: auto;
+  padding: 0 27px;
   width: 1146px;
   height: 114px;
 }
 
+.main-navigation {
+ display: flex;
+ width: 50%;
+}
+
 .site-navigation{
   display: flex;
-  justify-content: space-between;
   width: 500px;
   height: 12px;
   font-size: 16px;
@@ -116,7 +123,6 @@ img{
   background-color: var(--basic-pink-light);
 }
 
-
 .site-navigation .navigation-item-current{
   width: 89px;
   height: 31px;
@@ -128,13 +134,19 @@ img{
 .user-menu{
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content: space-between;
-  width: 244px;
+  width: 50%;
   height: 32px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-white);
+}
+
+.header-info{
+  margin-left:auto;
 }
 
 .slider{
@@ -197,7 +209,7 @@ img{
   height: auto;
   border-radius: 16px;
   background: url("../img/pattern.png") repeat;
-  margin: 27px;
+  margin: auto;
 }
 
 .features-text{
@@ -217,8 +229,10 @@ img{
 
 .block{
   display: flex;
-  width: 1200px;
+  width: 1146px;
   height: auto;
+  margin: auto;
+  padding: 40px 40px;
   justify-content: space-between;
 }
 
@@ -229,12 +243,12 @@ img{
 }
 
 .news-block{
+  display: block;
   width: 560px;
-  height: auto;
+  height: 220px;
   border-radius: 16px;
   background: url("../img/background-for-new.jpg") no-repeat;
   color: var(--basic-grey-dark);
-  margin: 27px 40px;
 }
 
 .news-block h2{
@@ -250,25 +264,39 @@ img{
   color: var(--basic-grey-dark);
 }
 
+.subscription{
+  display: block;
+  background: url("../img/post-background.png") no-repeat;
+  border-radius: 16px;
+  color: var(--basic-grey-middle);
+  width: 560px;
+  height: 220px;
+}
+
 .subscribe-block-inner{
-  margin: 6px;
+  display: inline-block;
+  width: 550px;
+  height: 210px;
+  margin: 5px 5px;
   background-color: var(--basic-grey-light);
   border-radius: 16px;
 }
 
-.subscription{
-  background: url("../img/post-background.png") no-repeat;
-  width: 560px;
-  height: auto;
-  border-radius: 16px;
-  color: var(--basic-grey-middle);
-  margin: 27px 40px;
+.map{
+  width:1146px;
+  margin: auto;
+}
+
+.contacts {
+  width: 1146px;
+  margin: auto;
 }
 
 .contacts-block{
   box-sizing: border-box;
   width: 303px;
   height: 306px;
+  float:right;
   background-color: var(--basic-white);
   border-radius: 16px;
   color: var(--basic-grey-dark);
@@ -301,6 +329,14 @@ img{
   font-weight:500;
 }
 
+.main-footer {
+  padding: 26px;
+  display: flex;
+  margin: auto;
+  width: 1146px;
+  height: 103px;
+}
+
 .social{
   list-style: none;
   display: flex;
@@ -310,6 +346,9 @@ img{
 }
 
 .info{
+  width: 327px;
+  height: 37px;
+  margin: auto;
   font-size: 13px;
   line-height: 18px;
 }
@@ -319,14 +358,19 @@ img{
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 327px;
-  height: 37px;
+  height: auto;
 }
 
 .info-list a{
   border-bottom: 1px solid var(--basic-white);
 }
 
-.copyright{
+.copyright {
+  display: block;
+  width: 190px;
+  height: 60px;
+  float: right;
+  margin-left: 27px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -353,7 +397,8 @@ img{
 
 .action{
   display:flex;
-  width: 1200px;
+  width: 1146px;
+  margin: auto;
   height: auto;
   list-style: none;
   justify-content: space-between;
@@ -402,7 +447,8 @@ img{
 }
 
 .promo{
-  display:flex;
+  height: auto;
+  margin: auto;
 }
 
 .product-card h3{
@@ -418,6 +464,7 @@ img{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 1146px;
+  margin: auto;
   height: auto;
   flex-wrap: wrap;
   list-style: none;
@@ -437,7 +484,6 @@ img{
   }
 
 .product-card a{
-  /*position: absolute;*/
   width: 200px;
   height: 44px;
   font-size: 18px;
@@ -449,7 +495,6 @@ img{
   }
 
 .promo a{
-  /*position: absolute;*/
   width: 200px;
   height: 44px;
   font-size: 18px;
@@ -460,16 +505,30 @@ img{
   border-radius: 50px;
   }
 
+.main{
+  margin:auto;
+}
+
+.slider-box {
+  width:1146px;
+  margin:auto;
+}
+
+.slider-box .slider {
+  width:1146px;
+  margin:auto;
+}
+
+.slider-1 {
+  display: block;
+  margin:auto;
+  justify-content: center;
+}
+
 .slider-box a{
-  /*position: absolute;*/
-  width: 278px;
-  height: 63px;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
-  background-image: linear-gradient(180deg, #F26843 0%, #E84D37 100%);
-  box-shadow: 0px 1px 2px #AC1000;
-  border-radius: 50px;
   }
 
 .contacts-block .button{
