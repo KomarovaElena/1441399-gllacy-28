@@ -66,7 +66,6 @@ img{
 .site-navigation{
   display: flex;
   width: 500px;
-  height: 12px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -230,9 +229,10 @@ img{
 .block{
   display: flex;
   width: 1146px;
-  height: auto;
+  min-height: 220px;
   margin: auto;
-  padding: 40px 40px;
+  padding-bottom: 45px;
+  padding-top: 40px;
   justify-content: space-between;
 }
 
@@ -295,8 +295,8 @@ img{
 .contacts-block{
   box-sizing: border-box;
   width: 303px;
-  height: 306px;
-  float:right;
+  min-height: 306px;
+  margin-left: auto;
   background-color: var(--basic-white);
   border-radius: 16px;
   color: var(--basic-grey-dark);
@@ -347,7 +347,6 @@ img{
 
 .info{
   width: 327px;
-  height: 37px;
   margin: auto;
   font-size: 13px;
   line-height: 18px;
@@ -368,8 +367,7 @@ img{
 .copyright {
   display: block;
   width: 190px;
-  height: 60px;
-  float: right;
+  margin-left: auto;
   margin-left: 27px;
   font-size: 12px;
   line-height: 18px;
@@ -395,43 +393,59 @@ img{
   border-bottom: 1px solid var(--basic-white);
 }
 
-.action{
+.promo-presentation{
   display:flex;
   width: 1146px;
-  margin: auto;
-  height: auto;
-  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo{
+  display:flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding：0 27px;
+  list-style: none;
 }
 
-.action-1{
+.promo-block{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px 22px 22px 16px;
+  width: calc(50% - 16px);
+  min-height: 229px;
+  color: var(--basic-white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.promo-block a{
+  align-self: flex-end;
+  margin-top: auto;
+  color: var(--basic-white);
+}
+
+.promo-malina{
   background: url("../img/malina.jpg") no-repeat;
-  width: 560px;
-  height: 229px;
-  border-radius: 16px;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 500;
 }
 
-.action-2{
+.promo-chocolate{
   background: url("../img/chocolate.jpg") no-repeat;
-  width: 560px;
-  height: 229px;
-  border-radius: 16px;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 500;
 }
 
-.action-1 h3,
-.action-2 h3{
+/*.promo h3{
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
   padding-left: 16px;
   padding-top: 16px;
-}
+}*/
 
 .picture{
   width: 267px;
@@ -444,11 +458,6 @@ img{
   height: 61px;
   background: var(--basic-white);
   border-radius: 50%;
-}
-
-.promo{
-  height: auto;
-  margin: auto;
 }
 
 .product-card h3{
